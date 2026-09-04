@@ -173,266 +173,104 @@ Topics Covered:
 
 # 🔄 Support Vector Machine (SVM)
 
-**Status:** Next
+**Status:** Completed
 
-Upcoming topics:
+Support Vector Machine was practiced for both **classification and regression**, including linear and non-linear problems, feature scaling, kernels, hyperparameter tuning, and GridSearchCV.
+
+## Topics Covered
 
 * SVM Intuition
 * Hyperplanes
 * Margins
 * Support Vectors
+* Decision Boundary
 * Linear SVM
 * Kernel Trick
 * Non-linear SVM
 * SVM Classification
 * SVM Regression
+* Feature Scaling
+* RBF Kernel
 * Hyperparameter Tuning
+* GridSearchCV
+* `C`
+* `epsilon`
+* `gamma`
+* Kernel selection
 
 ---
 
-# 📂 Repository Structure
-
-```text
-Machine Learning Algorithms
-│
-├── Linear Regression
-│
-├── Logistic Regression
-│
-├── Decision Tree
-│
-├── Random Forest
-│
-├── Ensemble Techniques
-│      ├── Voting Ensemble
-│      ├── Bagging
-│      ├── Gradient Boosting
-│      ├── AdaBoost
-│      └── XGBoost
-│
-└── KNN
-       ├── KNN Classification
-       └── KNN Regression
-```
-
-> Each algorithm has its own folder containing implementations, experiments, notebooks, and related learning material.
-
----
-
-# 📊 Machine Learning Projects
-
-Some practical Machine Learning projects are maintained separately from this algorithm-learning repository.
-
-## 📧 Email Spam Detection
-
-**Algorithm Used**
-
-* Logistic Regression
-
-**Techniques Used**
-
-* Data Cleaning
-* Text Preprocessing
-* TF-IDF Vectorization
-* Label Encoding
-* Model Training
-* Accuracy Evaluation
-* Precision
-* Recall
-* F1 Score
-* Confusion Matrix
-* Streamlit Deployment
-
-**Status**
-
-✅ Completed
-
-> Maintained in a separate GitHub repository.
-
----
-
-## ❤️ Heart Disease Prediction
-
-**Algorithm Used**
-
-* Decision Tree
-
-**Techniques Used**
-
-* Data Preprocessing
-* Model Training
-* Model Evaluation
-* Classification Metrics
-* Streamlit Deployment
-
-**Status**
-
-✅ Completed
-
-> Maintained in a separate GitHub repository.
-
----
-
-## ⚙️ Remaining Useful Life (RUL) Prediction
+## 🧪 SVM Classification
 
 **Dataset**
 
-* NASA C-MAPSS Turbofan Engine Dataset
+* Breast Cancer Dataset
 
-**Project Type**
+**Model**
 
-* End-to-End Machine Learning Project
+* `SVC`
 
-**Topics & Techniques Covered**
+**Techniques Covered**
 
-* Data Understanding
-* Exploratory Data Analysis
-* Data Preprocessing
-* Feature Engineering
-* Feature Selection
-* Model Training
-* Multiple Machine Learning Algorithms
-* Model Evaluation
-* Hyperparameter Tuning
-* Remaining Useful Life Prediction
-* End-to-End ML Workflow
+* Train-Test Split
+* Feature Scaling using StandardScaler
+* Linear SVM Classification
+* RBF Kernel
+* Model Prediction
+* Classification Evaluation
+* Accuracy Score
 
-**Status**
+**Result**
 
-✅ Completed
-
-> This project combines multiple Machine Learning concepts into an end-to-end predictive maintenance workflow.
+* Final Classification Accuracy: **96%**
 
 ---
 
-# 🛠️ Technologies Used
+## 📈 SVM Regression
 
-* Python
-* NumPy
-* Pandas
-* Matplotlib
-* Seaborn
-* Scikit-learn
-* XGBoost
-* Jupyter Notebook
-* Google Colab
-* Streamlit
-* Git
-* GitHub
+**Dataset**
 
----
+* Diabetes Dataset
 
-# 🎯 Current Progress
+**Model**
 
-| Module                  | Status      |
-| ----------------------- | ----------- |
-| Linear Regression       | ✅ Completed |
-| Logistic Regression     | ✅ Completed |
-| Decision Tree           | ✅ Completed |
-| Random Forest           | ✅ Completed |
-| Voting Ensemble         | ✅ Completed |
-| Bagging                 | ✅ Completed |
-| Gradient Boosting       | ✅ Completed |
-| AdaBoost                | ✅ Completed |
-| XGBoost                 | ✅ Completed |
-| KNN                     | ✅ Completed |
-| Cross-Validation        | ✅ Completed |
-| Hyperparameter Tuning   | ✅ Completed |
-| Streamlit Deployment    | ✅ Completed |
-| End-to-End ML Project   | ✅ Completed |
-| SVM                     | 🔄 Next     |
-| Naive Bayes             | ⏳ Upcoming  |
-| Unsupervised Learning   | ⏳ Upcoming  |
-| Advanced ML Engineering | ⏳ Upcoming  |
+* `SVR`
+
+**Techniques Covered**
+
+* Train-Test Split
+* Feature Scaling
+* Linear SVR
+* RBF SVR
+* Model Prediction
+* MAE
+* MSE
+* RMSE
+* R² Score
+
+**Initial Result**
+
+* Linear SVR R² Score: **≈ 44.5%**
+
+RBF SVR with default parameters performed significantly worse, demonstrating the importance of selecting suitable hyperparameters.
 
 ---
 
-# 🎯 Future Learning Goals
+## 🔍 SVR with GridSearchCV
 
-## 🔹 Supervised Learning
+GridSearchCV was applied to the SVR regression problem to search for better hyperparameter combinations.
 
-### Support Vector Machine
+**Hyperparameters Tuned**
 
-* SVM Classification
-* SVM Regression
-* Kernel Trick
-* Hyperparameter Tuning
+* `C`
+* `epsilon`
+* `gamma`
+* `kernel`
 
-### Naive Bayes
+**Best Parameters**
 
-* Gaussian Naive Bayes
-* Multinomial Naive Bayes
-* Bernoulli Naive Bayes
-* Bayes Theorem
-* Probabilistic Classification
-
----
-
-## 🔹 Unsupervised Learning
-
-* K-Means Clustering
-* Hierarchical Clustering
-* DBSCAN
-* PCA
-* Dimensionality Reduction
-
----
-
-## 🔹 Advanced ML Engineering & Deployment
-
-* Advanced Hyperparameter Tuning
-* Scikit-learn Pipelines
-* Model Interpretability
-* SHAP
-* FastAPI
-* Docker
-* MLflow
-* Cloud Deployment
-* Production ML Workflows
-
-> Streamlit deployment has already been practiced through practical Machine Learning projects.
-
----
-
-## 🔹 Future AI Learning
-
-After completing the core Machine Learning and ML Engineering roadmap:
-
-* Deep Learning
-* Neural Networks
-* Natural Language Processing
-* RAG (Retrieval-Augmented Generation)
-* Large Language Models (LLMs)
-* AI Engineering
-
----
-
-# 🌟 Repository Objective
-
-The aim of this repository is to:
-
-* Learn Machine Learning from fundamentals.
-* Understand the mathematics behind algorithms.
-* Understand when and why to use different algorithms.
-* Implement algorithms using Python and Scikit-learn.
-* Practice model evaluation.
-* Apply cross-validation and hyperparameter tuning.
-* Understand ensemble learning.
-* Build practical Machine Learning projects.
-* Develop end-to-end ML project experience.
-* Learn ML deployment and engineering practices.
-* Gradually progress toward advanced AI and Machine Learning systems.
-
----
-
-# 📈 Learning Philosophy
-
-> **"Don't just use Machine Learning algorithms. Understand why they work, how they work, when to use them, how to evaluate them, and how to improve and deploy them."**
-
----
-
-## ⭐ Follow the Journey
-
-This repository will continue to evolve as I learn and implement new Machine Learning algorithms, engineering techniques, and AI systems.
-
-If you find this repository useful, consider giving it a ⭐ Star!
+```text
+C = 100
+epsilon = 0.01
+gamma = 0.01
+kernel = rbf
